@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add New Product"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Product Name"
+            app:layout_constraintTop_toBottomOf="@id/titleText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/priceInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Main Price (e.g. ৳ 18,900)"
+            app:layout_constraintTop_toBottomOf="@id/nameInputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/imageInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Image URL"
+            app:layout_constraintTop_toBottomOf="@id/priceInputLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etProductImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Markets Section -->
+        <TextView
+            android:id="@+id/marketHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Market Options"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageInputLayout" />
+
+        <!-- Helper for creating market rows -->
+        <LinearLayout
+            android:id="@+id/marketContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/marketHeader">
+
+            <!-- Market 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <EditText android:id="@+id/etM1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Market 1 Name" />
+                    <EditText android:id="@+id/etP1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Price" />
+                </LinearLayout>
+                <EditText android:id="@+id/etL1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Checkout Link 1" />
+            </LinearLayout>
+
+            <!-- Market 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <EditText android:id="@+id/etM2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Market 2 Name" />
+                    <EditText android:id="@+id/etP2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Price" />
+                </LinearLayout>
+                <EditText android:id="@+id/etL2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Checkout Link 2" />
+            </LinearLayout>
+
+            <!-- Market 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <EditText android:id="@+id/etM3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Market 3 Name" />
+                    <EditText android:id="@+id/etP3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Price" />
+                </LinearLayout>
+                <EditText android:id="@+id/etL3" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Checkout Link 3" />
+            </LinearLayout>
+
+            <!-- Market 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <EditText android:id="@+id/etM4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Market 4 Name" />
+                    <EditText android:id="@+id/etP4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Price" />
+                </LinearLayout>
+                <EditText android:id="@+id/etL4" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Checkout Link 4" />
+            </LinearLayout>
+
+            <!-- Market 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                    <EditText android:id="@+id/etM5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Market 5 Name" />
+                    <EditText android:id="@+id/etP5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Price" />
+                </LinearLayout>
+                <EditText android:id="@+id/etL5" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Checkout Link 5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:text="Save Product"
+            app:layout_constraintTop_toBottomOf="@id/marketContainer" />
+
+        <ProgressBar
+            android:id="@+id/addProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
