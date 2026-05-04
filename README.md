@@ -1,25 +1,25 @@
 ````md
-# 🛒 Local Market Price
+# Local Market Price
 
 Local Market Price is a modern Android application designed to help users stay updated with the latest prices of products in local markets.  
 The app provides a clean and user-friendly experience with real-time data synchronization using Firebase Realtime Database.
 
 ---
 
-# ✨ Features
+#  Features
 
-- 📌 Real-time product price updates
-- 🔍 Advanced search functionality
-- 🎨 Modern Material 3 UI design
-- 📱 Responsive 2-column grid layout
-- 📂 Navigation Drawer support
-- 📊 Collapsing Toolbar animation
-- ➕ Add new products feature
-- ⚡ Fast and smooth performance
+-  Real-time product price updates
+-  Advanced search functionality
+-  Modern Material 3 UI design
+-  Responsive 2-column grid layout
+-  Navigation Drawer support
+-  Collapsing Toolbar animation
+-  Add new products feature
+-  Fast and smooth performance
 
 ---
 
-# 🛠️ Tech Stack
+#  Tech Stack
 
 - **Language:** Java
 - **UI Framework:** Android Material Components (Material 3)
@@ -30,15 +30,7 @@ The app provides a clean and user-friendly experience with real-time data synchr
 
 ---
 
-# 📸 Screenshots
-
-| Home Screen | Navigation Drawer | Search Feature |
-|-------------|-------------------|----------------|
-| Home | Drawer | Search |
-
----
-
-# 🚀 Getting Started
+#  Getting Started
 
 ## Prerequisites
 
@@ -49,7 +41,7 @@ Before running the project, make sure you have:
 
 ---
 
-# 📥 Installation
+#  Installation
 
 ## 1. Clone the Repository
 
@@ -63,7 +55,7 @@ Open the cloned project folder in Android Studio.
 
 ---
 
-# 🔥 Firebase Setup
+#  Firebase Setup
 
 1. Go to Firebase Console
 2. Create a new Firebase project
@@ -79,16 +71,16 @@ com.quick.localmarketprice
 
 ---
 
-# ▶️ Run the App
+#  Run the App
 
 - Sync Gradle
 - Click the **Run** button in Android Studio
 
 ---
 
-# 📦 Dependencies
+# Dependencies
 
-```gradle
+gradle
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.7.1'
@@ -102,21 +94,6 @@ dependencies {
     // Other dependencies
 
 }
-```
-
----
-
-# 👨‍💻 Developer
-
-**Imam**
-
-Feel free to reach out for suggestions, feedback, or collaborations.
-
----
-
-# 📄 License
+#  License
 
 This project is licensed under the MIT License.
-
----
-````
